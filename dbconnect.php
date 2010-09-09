@@ -1,4 +1,4 @@
-<?
+<?php
     include("setting.php");
     $conn = mysql_connect($dbhost, $dbuser, $dbpass);
     if(!$conn) die("mysql error:".mysql_error());

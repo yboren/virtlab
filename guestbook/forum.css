@@ -1,0 +1,19 @@
+body,td { font-size:10pt; color:#000000; background-color:#ffffff; }
+
+a:link,a:visited	{ text-decoration: none; color: #003399  }
+a:hover			{ text-decoration: underline }
+.flat { background-color:#000000 }
+
+.table_header { background-color:#000000; color:#ffffff; }
+
+.latest_post { font-family:arial; font-size:10pt; color:#000000; }
+.latest_post_link { background-color:#c0c0c0; color:#000000; font-size:10pt; font-family:arial; border: solid 1px #000000; text-decoration:none;}
+
+.new	{ font-size:8pt; color:#ff0000; font-weight:bold;}
+.notnew {verdana; font-size:8pt; color:#808080;}
+
+.message { border-bottom:solid 1px #000000;}
+
+.highlight { background-color:#c0c0c0; }
+
+.quote { padding:5px; border:solid 1px #000000; background-color:#e6e6e6; color:#000000;}
