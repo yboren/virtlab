@@ -137,7 +137,7 @@ else
 		<tr>
 			<td align="center">
 				<P><br></P>
-				<?php$end = $sql->getmicrotime();?>
+				<?php $end = $sql->getmicrotime();?>
 				<?php echo round($sql->query_time,4);?>秒内执行<?php echo $sql->query_count;?>个请求<br>
 				<?php echo "页面执行时间 ".round($end-$start,4)."秒";?><br>
 			</td>

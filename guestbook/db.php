@@ -13,7 +13,7 @@ class sql
 	var $query_time=0;
 	var $debug;
 	
-	function sql($sqlinfo="",$debugging=true) {
+	function sql($sqlinfo="",$debugging=false) {
 		$this->debug=$debugging;
 		if (is_array($sqlinfo)) {
 			$this->host = $sqlinfo['host'];

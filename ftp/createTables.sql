@@ -1,0 +1,40 @@
+create database download;
+use download;
+CREATE TABLE `upload_files` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `fkey` VARCHAR(255) NOT NULL DEFAULT '',
+  `name` TEXT NOT NULL DEFAULT '',
+  `path` TEXT NOT NULL DEFAULT '',
+  `utime` INT(10) NOT NULL DEFAULT '0',
+  `ip` VARCHAR(15) NOT NULL DEFAULT '',
+  `dcount` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+  `comment` VARCHAR(45) NOT NULL DEFAULT '',
+  PRIMARY KEY(`id`)
+)
+ENGINE = MYISAM;
+CREATE TABLE `deny_ip` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ip` VARCHAR(15) NOT NULL DEFAULT '',
+  `utime` INT(10) NOT NULL DEFAULT '0',
+  `comment` VARCHAR(45) NOT NULL DEFAULT '',
+  PRIMARY KEY(`id`)
+)
+ENGINE = MYISAM;
+CREATE TABLE `admin` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user` VARCHAR(15) NOT NULL DEFAULT '',
+  `password` VARCHAR(200) NOT NULL DEFAULT '',
+  `comment` VARCHAR(45) NOT NULL DEFAULT '',
+  PRIMARY KEY(`id`)
+)
+ENGINE = MYISAM;
+CREATE TABLE `ad` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `adname` VARCHAR(200) NOT NULL DEFAULT '' UNIQUE,
+  `ad` TEXT NOT NULL DEFAULT '',
+  `comment` VARCHAR(45) NOT NULL DEFAULT '',
+  PRIMARY KEY(`id`)
+)
+ENGINE = MYISAM;
+insert into admin (`user`,`password`) values("admin","698d51a19d8a121ce581499d7b701668");
+INSERT INTO `ad` VALUES (10,'ueO45tK7','',''),(20,'ueO45rb+','',''),(30,'ueO45sj9','',''),(40,'ueO45svE','',''),(50,'ueO45s7l','','')

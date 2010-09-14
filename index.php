@@ -25,12 +25,24 @@ if(!isset($_SESSION["userid"])){
 <?php
 }else{
 ?>
-    <p><?php echo $_SESSION["username"];
+    <h2>
+<?php echo "欢迎";
+echo $_SESSION["username"];
+echo ',';
 echo '<a href="logout.php">退出</a>';
-echo '<a href="guestbook/index.php">留言簿</a>';
 ?>
-</p>
-<a href="machne.php">machine</a>
+</h2>
+<hr/>
+<h2>
+查看实验内容
+</h2>
+<p><a href="viewtask.php">点击这里</a>
+<hr/>
+<h2>当前可用机器：</h2>
+<p>
+<ul>
+<li><a href="machine.php" target="_blank">CentOS 5.4</a></li>
+</ul>
 <?php
 }
 ?>
