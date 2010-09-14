@@ -1,9 +1,3 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>首页</title>
-</head>
-<body>
 <?php
 error_reporting(0);
 session_start();
@@ -31,6 +25,6 @@ include("header.php");
   </p>
   <p>&nbsp;</p>
 </form>
-
-</body>
-<html>
+<?php
+include("footer.php");
+?>

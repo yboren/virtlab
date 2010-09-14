@@ -183,10 +183,11 @@ body {
 
 h1 {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   color: #1D3D62;
-  font-size:17px;
-  margin-top: 0px;
+  font-size:30px;
+  margin-top: 10px;
+  margin-left: 20px;
   margin-bottom: -4px;
   }
 
